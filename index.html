@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormSheet</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Pick a Plant</h1>
+
+    <div class="container">
+        <div class="row plantRow">
+            <div class="col-4 plantPicture">
+                <img class="plantImg" src="img/plant2.jpg" alt="">
+            </div>
+            <div class="col-4 plantPicture">
+                <img class="plantImg" src="img/plant1.jpg" alt="">
+            </div>
+            <div class="col-4 plantPicture">
+                <img class="plantImg" src="img/plant3.jpg" alt="">
+            </div>
+        </div>
+        <div class="row plantName">
+            <div class="col-4">
+                <h3>Plant 1</h3>
+            </div>
+            <div class="col-4">
+                <h3>Plant 2</h3>
+            </div>
+            <div class="col-4">
+                <h3>Plant 3</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container formSheet">
+       <h3>Fill out form for free sample:</h3>
+        <form  action="/submit">
+            <p>
+                <h5>Pick one Plant:</h5>
+                <input type="radio" name="plants" id="pl1" value="pl1">
+                <label for="pl1">Plant 1</label>
+                <input type="radio" name="plants" id="pl2" value="pl2">
+                <label for="pl1">Plant 2</label>
+                <input type="radio" name="plants" id="pl3" value="pl3">
+                <label for="pl1">Plant 3</label>
+            </p>
+            <p>
+               <h6>Name:</h6>
+                <label class="inputLabel" for="fname">First:</label>
+                <input type="text" id="fname" placeholder="First Name" class="inputBox">
+               
+                <label class="inputLabel  for="lname">Last:</label>
+                <input type="text" id="lname" placeholder="Last Name" class="inputBox">
+            </p>
+            <p>
+                <h6>Address:</h6>
+                <label for="street" class="inputLabel">Street address:</label>
+                <input type="text" id="street" placeholder="" class="inputBox">
+            </p>
+            <p>
+                <label for="city" class="inputLabel">City:</label>
+                <input type="text" id="city" placeholder="City Name" class="inputBox">
+
+                <label for="state" class="inputLabel">State:</label>
+                <select  name="state" id="state" class="inputBox">
+                    <option value="al">AL</option>
+                    <option value="ca">CA</option>
+                    <option value="fl">FL</option>
+                    <option value="ny">NY</option>
+                    <option value="pa">PA</option>
+                    <option value="tx">TX</option>
+                </select>
+
+                <label for="zip" class="inputLabel">Zipcode:</label>
+                <input type="text" id="zip" placeholder="Zipcode" class="inputBox"> 
+            </p>
+           
+            <p>
+                <h6>Contact:</h6>
+                <label for="email" class="inputLabel">Email:</label>
+                <input type="email" id="email" placeholder="email" class="inputBox">  
+            </p> 
+           
+            <button>Submit</button>
+           
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</body>
+</html>
